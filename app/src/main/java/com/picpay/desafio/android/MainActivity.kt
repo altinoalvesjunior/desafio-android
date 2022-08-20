@@ -8,6 +8,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.picpay.desafio.android.data.model.User
+import com.picpay.desafio.android.data.repository.PicPayService
+import com.picpay.desafio.android.view.UserListAdapter
 import okhttp3.OkHttpClient
 import retrofit2.Call
 import retrofit2.Callback
