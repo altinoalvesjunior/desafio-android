@@ -2,7 +2,6 @@ package com.picpay.desafio.android.data.service
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.picpay.desafio.android.data.repository.PicPayService
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -25,7 +24,7 @@ class RemoteDataSource {
             .build()
     }
 
-    private val service: PicPayService by lazy {
+    val service: PicPayService by lazy {
         retrofit.create(PicPayService::class.java)
     }
 }
