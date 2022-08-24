@@ -56,6 +56,7 @@ dependencies {
     implementation "org.koin:koin-androidx-viewmodel:$koin_version"
 
     implementation "com.google.dagger:dagger:$dagger_version"
+    testImplementation 'org.testng:testng:6.9.6'
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
 
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
@@ -82,6 +83,7 @@ dependencies {
 
     testImplementation "junit:junit:$junit_version"
     testImplementation "org.mockito:mockito-core:$mockito_version"
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.0.0-alpha01"
     testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockito_kotlin_version"
     testImplementation "androidx.arch.core:core-testing:$core_testing_version"
     implementation "org.koin:koin-test:$koin_version"
